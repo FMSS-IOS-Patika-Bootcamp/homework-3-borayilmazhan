@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="129" id="7l6-s4-kSr" customClass="PostListTableViewCell" customModule="BootcampTaskk3" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="129"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7l6-s4-kSr" id="DpO-O8-N8q">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="129"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lz6-al-ACP">
+                        <rect key="frame" x="16" y="16" width="288" height="113"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EJb-4j-v2u">
+                                <rect key="frame" x="8" y="8" width="272" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d4f-Es-Z32">
+                                <rect key="frame" x="8" y="42.5" width="272" height="62.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="d4f-Es-Z32" secondAttribute="bottom" constant="8" id="Aen-EV-gKg"/>
+                            <constraint firstAttribute="trailing" secondItem="EJb-4j-v2u" secondAttribute="trailing" constant="8" id="KZK-X5-h9X"/>
+                            <constraint firstItem="d4f-Es-Z32" firstAttribute="top" secondItem="EJb-4j-v2u" secondAttribute="bottom" constant="8" id="ZMR-RE-sYq"/>
+                            <constraint firstItem="EJb-4j-v2u" firstAttribute="leading" secondItem="lz6-al-ACP" secondAttribute="leading" constant="8" id="Zdl-CS-D9n"/>
+                            <constraint firstItem="d4f-Es-Z32" firstAttribute="leading" secondItem="lz6-al-ACP" secondAttribute="leading" constant="8" id="eC8-OZ-Yfb"/>
+                            <constraint firstItem="EJb-4j-v2u" firstAttribute="top" secondItem="lz6-al-ACP" secondAttribute="top" constant="8" id="mbX-NI-tAD"/>
+                            <constraint firstAttribute="trailing" secondItem="d4f-Es-Z32" secondAttribute="trailing" constant="8" id="oMw-N0-hQ1"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="75" id="t7g-8m-7x1"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="lz6-al-ACP" firstAttribute="leading" secondItem="DpO-O8-N8q" secondAttribute="leading" constant="16" id="afC-F4-Hx4"/>
+                    <constraint firstAttribute="trailing" secondItem="lz6-al-ACP" secondAttribute="trailing" constant="16" id="eEb-PT-HVF"/>
+                    <constraint firstAttribute="bottom" secondItem="lz6-al-ACP" secondAttribute="bottom" id="lH8-HH-Sbd"/>
+                    <constraint firstItem="lz6-al-ACP" firstAttribute="top" secondItem="DpO-O8-N8q" secondAttribute="top" constant="16" id="rdC-mH-RGG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="ve1-Bn-wfa"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="containerView" destination="lz6-al-ACP" id="b4S-JI-lnZ"/>
+                <outlet property="postDescLabel" destination="d4f-Es-Z32" id="i65-vt-3Wv"/>
+                <outlet property="postTitleLabel" destination="EJb-4j-v2u" id="4y6-IG-bd5"/>
+            </connections>
+            <point key="canvasLocation" x="346" y="-3"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
