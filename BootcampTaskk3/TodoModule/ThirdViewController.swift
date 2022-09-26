@@ -45,7 +45,7 @@ private extension ThirdViewController {
     }
     
     func registerCell() {
-        tableViewThirdVC.register(.init(nibName: "ToDoTableViewCell", bundle: nil), forCellReuseIdentifier: "ToDoTableViewCell")
+        tableViewThirdVC.register(.init(nibName: "TodoTableViewCell", bundle: nil), forCellReuseIdentifier: "TodoTableViewCell")
     }
 }
 
@@ -81,7 +81,7 @@ extension ThirdViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ToDoTableViewCell") as! TodoTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TodoTableViewCell") as! TodoTableViewCell
         let item = viewModel.todoAtIndex(indexPath.row)
 
         cell.nameLabel.text = item.name
